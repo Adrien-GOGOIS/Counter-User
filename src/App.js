@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Counter from "./components/Counter";
+import CounterBis from "./components/CounterBis";
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
       <div>
         <h1>Counter</h1>
         <Counter increment="+" substract="-" />
+        <CounterBis increment="+" substract="-" />
         <p>L'application qui fait peur aux horlogers</p>
       </div>
     );

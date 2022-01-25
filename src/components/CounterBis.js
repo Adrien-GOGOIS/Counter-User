@@ -1,13 +1,13 @@
 import React from "react";
 import "./Counter.css";
 
-import CounterBis from "./CounterBis";
+import Counter from "./Counter";
 
-class Counter extends React.Component {
+class CounterBis extends React.Component {
   constructor() {
     super();
     this.state = {
-      count: 0,
+      countBis: 0,
     };
   }
   render() {
@@ -15,18 +15,18 @@ class Counter extends React.Component {
       <div className="container">
         <button
           onClick={() => {
-            if (this.state.count > 0) {
-              this.setState({ count: this.state.count - 1 });
+            if (this.state.countBis > 0) {
+              this.setState({ countBis: this.state.countBis - 1 });
             }
           }}
         >
           {this.props.substract}
         </button>
-        <h2>{this.state.count}</h2>
+        <h2>{this.state.countBis}</h2>
         <button
           onClick={() => {
-            if (this.state.count < 100) {
-              this.setState({ count: this.state.count + 1 });
+            if (this.state.countBis < 100) {
+              this.setState({ countBis: this.state.countBis + 1 });
             }
           }}
         >
@@ -37,4 +37,4 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter;
+export default CounterBis;
