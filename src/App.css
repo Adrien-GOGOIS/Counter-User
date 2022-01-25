@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  font-size: 100px;
+  border: solid gray 3px;
+  margin-right: 300px;
+  margin-left: 300px;
+}
+
+p {
+  margin-top: 50px;
+  color: gray;
+  font-style: italic;
+}

@@ -9,6 +9,7 @@ class App extends React.Component {
       <div>
         <h1>Counter</h1>
         <Counter increment="+" substract="-" />
+        <p>L'application qui fait peur aux horlogers</p>
       </div>
     );
   }
