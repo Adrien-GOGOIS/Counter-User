@@ -7,7 +7,8 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Counter />
+        <h1>Counter</h1>
+        <Counter increment="+" substract="-" />
       </div>
     );
   }

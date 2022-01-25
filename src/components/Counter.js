@@ -7,25 +7,25 @@ class Counter extends React.Component {
       count: 0,
     };
   }
-
   render() {
     return (
       <div>
-        <h1>Counter</h1>
         <h2>{this.state.count}</h2>
         <button
           onClick={() => {
-            this.setState({ count: this.state.count - 1 });
+            if (this.state.count > 0) {
+              this.setState({ count: this.state.count - 1 });
+            }
           }}
         >
-          -
+          {this.props.substract}
         </button>
         <button
           onClick={() => {
             this.setState({ count: this.state.count + 1 });
           }}
         >
-          +
+          {this.props.increment}
         </button>
       </div>
     );
