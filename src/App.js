@@ -102,7 +102,10 @@ class App extends React.Component {
           incrementBis={this.increment2}
           substractBis={this.substract2}
         />
-        <p>L'application qui fait peur aux horlogers</p>
+        <p>
+          L'application qui fait transpirer ton horloger !{" "}
+          <span>&#128561;</span>
+        </p>
       </div>
     );
   }

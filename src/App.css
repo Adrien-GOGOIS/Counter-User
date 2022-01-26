@@ -39,13 +39,17 @@
 
 h1 {
   font-size: 100px;
-  border: solid gray 3px;
+  border: solid rgba(29, 202, 98, 0.5) 3px;
   margin-right: 300px;
   margin-left: 300px;
+  box-shadow: 40px 20px 8px 5px rgba(0, 0, 255, 0.5);
 }
 
 p {
   margin-top: 50px;
-  color: gray;
-  font-style: italic;
+}
+
+span {
+  font-size: 30px;
+  color: black;
 }

@@ -6,9 +6,13 @@ class CounterBis extends React.Component {
   render() {
     return (
       <div className="container">
-        <button onClick={this.props.substractBis}>-</button>
+        <button className="counter2" onClick={this.props.substractBis}>
+          -
+        </button>
         <h2>{this.props.countBis}</h2>
-        <button onClick={this.props.incrementBis}>+</button>
+        <button className="counter2" onClick={this.props.incrementBis}>
+          +
+        </button>
       </div>
     );
   }
