@@ -20,7 +20,18 @@ class App extends React.Component {
         <Counter
           count={this.state.count}
           increment={() => {
-            if (this.state.count < 100) {
+            if (this.state.count === this.state.countBis) {
+              this.setState((prevState) => {
+                return {
+                  count: prevState.count + 1,
+                  countBis: prevState.countBis + 1,
+                };
+              });
+            }
+            if (
+              this.state.count < 100 &&
+              this.state.count < this.state.countBis
+            ) {
               this.setState((prevState) => {
                 return { count: prevState.count + 1 };
               });
@@ -44,6 +55,14 @@ class App extends React.Component {
             }
           }}
           substractBis={() => {
+            if (this.state.count === this.state.countBis) {
+              this.setState((prevState) => {
+                return {
+                  count: prevState.count - 1,
+                  // countBis: prevState.countBis - 1,
+                };
+              });
+            }
             if (this.state.countBis > 0) {
               this.setState((prevState) => {
                 return { countBis: prevState.countBis - 1 };
