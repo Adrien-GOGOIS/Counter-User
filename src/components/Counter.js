@@ -1,8 +1,7 @@
 import React from "react";
 import "./Counter.css";
 
-import CounterBis from "./CounterBis";
-
+// Component du 1er compteur avec onClick
 class Counter extends React.Component {
   render() {
     return (

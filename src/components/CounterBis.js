@@ -1,8 +1,7 @@
 import React from "react";
 import "./Counter.css";
 
-import Counter from "./Counter";
-
+// Component 2e compteur avec évènement onClick
 class CounterBis extends React.Component {
   render() {
     return (
