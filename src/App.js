@@ -31,7 +31,7 @@ class App extends React.Component {
   // FONCTION DE SOUSTRACTION COMPTEUR 2 //
   substract2() {
     // GUARD si compteur 1 = compteur 2 --> Soustraction sur les 2 :
-    if (this.state.count === this.state.countBis) {
+    if (this.state.count === this.state.countBis && this.state.count > 0) {
       this.setState((prevState) => {
         return {
           count: prevState.count - 1,
