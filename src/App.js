@@ -24,6 +24,10 @@ class App extends React.Component {
         <Counter
           count={this.state.count}
           increment={() => {
+            // Guard limitation 1er compteur à 100
+            if (this.state.count === 100) {
+              return;
+            }
             {
               /* Guard si égalité, addition sur les 2 compteurs */
             }
@@ -37,12 +41,9 @@ class App extends React.Component {
             }
 
             {
-              /* Addition, si le 1er compteur ne dépasse pas 100 ou le 2e compteur */
+              /* Limitation 1er compteur au count du 2e compteur */
             }
-            if (
-              this.state.count < 100 &&
-              this.state.count < this.state.countBis
-            ) {
+            if (this.state.count < this.state.countBis) {
               this.setState((prevState) => {
                 return { count: prevState.count + 1 };
               });
